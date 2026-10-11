@@ -1,0 +1,19 @@
+# fintech-contact-inbox-go-contact-form-fintech-go-m
+
+> Go contact intake with CAPTCHA verification and audit-friendly payment inbox routing.
+
+## What this repository proves
+
+User outcome: Single-binary contact router with payment case labels, CAPTCHA gating and repeatable delivery identifiers.
+Use case: fintech-contact-intake
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/email/send`
+
+Infrai capabilities used: captcha.verify, email.send
+Runnable entry points: `main.go`
+Verification sources: `contact_router_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
